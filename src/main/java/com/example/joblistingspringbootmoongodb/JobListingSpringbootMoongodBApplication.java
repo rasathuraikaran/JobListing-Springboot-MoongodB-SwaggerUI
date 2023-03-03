@@ -1,5 +1,7 @@
 package com.example.joblistingspringbootmoongodb;
 
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.SpringApplication;
@@ -15,6 +17,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @SpringBootApplication
+
 public class JobListingSpringbootMoongodBApplication {
     @Bean
     public Docket api() {
@@ -29,6 +32,7 @@ public class JobListingSpringbootMoongodBApplication {
         return builder.build();
     }
     public static void main(String[] args) {
+
         SpringApplication.run(JobListingSpringbootMoongodBApplication.class, args);
     }
 

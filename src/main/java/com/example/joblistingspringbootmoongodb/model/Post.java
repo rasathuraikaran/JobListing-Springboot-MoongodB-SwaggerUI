@@ -1,13 +1,17 @@
 package com.example.joblistingspringbootmoongodb.model;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Arrays;
 
+
+@Document(collection = "JobPost")
 public class Post {
 
     private String profile;
     private String desc;
     private int exp;
-    private  String tech[];
+    private  String techs[];
 
     public String getProfile() {
         return profile;
@@ -34,11 +38,11 @@ public class Post {
     }
 
     public String[] getTech() {
-        return tech;
+        return techs;
     }
 
     public void setTech(String[] tech) {
-        this.tech = tech;
+        this.techs = tech;
     }
 
     public Post() {
@@ -50,7 +54,7 @@ public class Post {
                 "profile='" + profile + '\'' +
                 ", desc='" + desc + '\'' +
                 ", exp=" + exp +
-                ", tech=" + Arrays.toString(tech) +
+                ", tech=" + Arrays.toString(techs) +
                 '}';
     }
 }
