@@ -33,7 +33,7 @@ Navigate to http://localhost:8080/swagger-ui.html in your web browser to access 
 Use the API to perform searches based on the constraints implemented in the project.
 
 
-#Contributing
+# Contributing
 We welcome contributions to this project! To contribute, please follow these steps:
 
 Fork the project repository.
